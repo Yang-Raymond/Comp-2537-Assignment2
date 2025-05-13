@@ -1,0 +1,25 @@
+<%-include("templates/header")%>
+    <form action="/signupSubmit" method="post">
+        <h2>Create User</h2>
+        <br>
+        <div class="mb-3 row">
+            <label for="name" class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+                <input name="name" type="text" class="form-control" id="name" placeholder="name">
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="email" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input name="email" type="email" class="form-control" id="email" placeholder="email@example.com">
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="pwd" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+                <input name="password" type="password" class="form-control" id="pwd">
+            </div>
+        </div>
+        <button class="btn btn-outline-secondary">Submit</button>
+    </form>
+    <%- include("templates/footer") %>
