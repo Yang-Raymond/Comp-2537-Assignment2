@@ -137,7 +137,7 @@ app.post('/loginSubmit', async (req, res) => {
 
 app.get("/admin", async (req, res) => {
     if (!req.session.authenticated) {
-        return res.redirect('/');
+        return res.redirect('/login');
     }
     const user = await userCollection.findOne({ email: req.session.email });
     try {
